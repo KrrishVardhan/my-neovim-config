@@ -13,12 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Set up plugins
 require("lazy").setup({
-    {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-        config = function()
-            vim.cmd.colorscheme("tokyonight-night")
-        end,
-    },
+    require 'plugins.colortheme',
+    require 'plugins.treesitter',
+    require 'plugins.telescope'
 })

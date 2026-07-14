@@ -17,3 +17,23 @@ require("lazy").setup({
     require 'plugins.treesitter',
     require 'plugins.telescope'
 })
+
+-- pls work now
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = {
+    'java',
+    'lua',
+    'python',
+    'javascript',
+    'typescript',
+    'typescriptreact',
+    'html',
+    'css',
+    'json',
+    'bash',
+    'markdown',
+  },
+  callback = function()
+    vim.treesitter.start()
+  end,
+})

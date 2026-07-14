@@ -18,3 +18,29 @@ vim.keymap.set('n', 'N', 'Nzzzv', opts)
 
 -- Toggle line wrapping
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
+
+
+-- JAVA keymap
+vim.keymap.set('n', '<leader>r', function()
+  vim.cmd('write')
+
+  local file = vim.fn.expand('%:p')
+  local directory = vim.fn.expand('%:p:h')
+  local class_name = vim.fn.expand('%:t:r')
+
+  vim.cmd('botright 12split')
+
+  vim.fn.termopen({
+    'bash',
+    '-lc',
+    string.format(
+      'javac %s && java -cp %s %s',
+      vim.fn.shellescape(file),
+      vim.fn.shellescape(directory),
+      vim.fn.shellescape(class_name)
+    ),
+  })
+
+  vim.cmd('startinsert')
+end, { desc = 'Compile and run Java file' })
+

@@ -32,6 +32,7 @@ vim.api.nvim_create_autocmd('FileType', {
     'json',
     'bash',
     'markdown',
+    'php'
   },
   callback = function()
     vim.treesitter.start()

@@ -15,7 +15,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     require 'plugins.colortheme',
     require 'plugins.treesitter',
-    require 'plugins.telescope'
+    require 'plugins.telescope',
+    require "plugins.conform"
 })
 
 -- pls work now
@@ -32,7 +33,8 @@ vim.api.nvim_create_autocmd('FileType', {
     'json',
     'bash',
     'markdown',
-    'php'
+    'php',
+    'blade'
   },
   callback = function()
     vim.treesitter.start()

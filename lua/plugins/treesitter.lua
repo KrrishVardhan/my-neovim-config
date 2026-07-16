@@ -31,7 +31,8 @@ return { -- Highlight, edit, and navigate code
       'tsx',
       'css',
       'html',
-      'php'
+      'php',
+      'blade'
     },
     -- Autoinstall languages that are not installed
     auto_install = true,

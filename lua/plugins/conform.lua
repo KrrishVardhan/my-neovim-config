@@ -29,11 +29,6 @@ return {
             stdin = false,
         },
     },
-
-    format_on_save = {
-      timeout_ms = 500,
-      lsp_format = "fallback",
-    },
   },
 
   keys = {
@@ -41,7 +36,7 @@ return {
       "<leader>f",
       function()
         require("conform").format({
-          async = true,
+          async = false,
           lsp_format = "fallback",
         })
       end,

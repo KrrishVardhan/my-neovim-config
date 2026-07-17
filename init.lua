@@ -18,6 +18,7 @@ require("lazy").setup({
     require 'plugins.telescope',
     require 'plugins.conform',
     require 'plugins.lsp',
+    require 'plugins.harpoon',
 })
 
 -- pls work now

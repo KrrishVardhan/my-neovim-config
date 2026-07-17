@@ -16,7 +16,8 @@ require("lazy").setup({
     require 'plugins.colortheme',
     require 'plugins.treesitter',
     require 'plugins.telescope',
-    require "plugins.conform"
+    require 'plugins.conform',
+    require 'plugins.lsp',
 })
 
 -- pls work now

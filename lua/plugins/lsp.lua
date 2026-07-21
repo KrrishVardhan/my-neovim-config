@@ -18,6 +18,7 @@ return {
             "ts_ls",
             "html",
             "emmet_language_server",
+            "intelephense",
             -- "jdtls",
           },
           automatic_enable = true,

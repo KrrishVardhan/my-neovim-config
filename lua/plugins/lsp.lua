@@ -19,6 +19,7 @@ return {
             "html",
             "emmet_language_server",
             "intelephense",
+            "tailwindcss",
             -- "jdtls",
           },
           automatic_enable = true,

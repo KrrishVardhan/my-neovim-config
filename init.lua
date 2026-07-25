@@ -19,6 +19,7 @@ require("lazy").setup({
     require 'plugins.conform',
     require 'plugins.lsp',
     require 'plugins.harpoon',
+    require 'plugins.cord',
 })
 
 -- pls work now

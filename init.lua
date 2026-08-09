@@ -20,6 +20,7 @@ require("lazy").setup({
     require 'plugins.lsp',
     require 'plugins.harpoon',
     require 'plugins.cord',
+    require 'plugins.indent-blankline',
 })
 
 -- pls work now

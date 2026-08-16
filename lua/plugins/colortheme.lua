@@ -5,6 +5,10 @@ return {
     config = function()
         vim.cmd.colorscheme("tokyonight-night")
 
+        vim.opt.fillchars = {
+            eob = " ",
+        }
+
         local transparent_groups = {
             "Normal",
             "NormalNC",

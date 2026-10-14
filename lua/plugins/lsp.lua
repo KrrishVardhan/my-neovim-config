@@ -20,7 +20,7 @@ return {
             "emmet_language_server",
             "intelephense",
             "tailwindcss",
-            -- "jdtls",
+            "jdtls",
           },
           automatic_enable = true,
         },
@@ -63,6 +63,10 @@ return {
     },
 
     opts = {
+      fuzzy = {
+        implementation = "lua",
+      },
+
       keymap = {
         preset = "default",
         ["<CR>"] = { "accept", "fallback" },

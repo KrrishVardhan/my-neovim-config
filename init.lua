@@ -21,6 +21,7 @@ require("lazy").setup({
     require 'plugins.harpoon',
     require 'plugins.cord',
     require 'plugins.indent-blankline',
+    require 'plugins.markview',
 })
 
 -- pls work now
